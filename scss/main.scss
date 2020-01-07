@@ -1,0 +1,24 @@
+$fontstack: Calibri, Arial, sans-serif;
+$bodycolor: grey;
+$headercolor: red;
+
+p {
+  font: $fontstack;
+  color: $bodycolor;
+}
+
+h1, h2, h3, h4 {
+  font-family: $fontstack;
+  color: $headercolor;
+}
+
+#nav-bar {
+  ul{
+  list-style: none;
+  background-color: grey;
+  }
+
+  li {
+    text-decoration: none;}
+  }
+}

@@ -16,12 +16,12 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
 		<script type="text/javascript" src="./js/app.js" defer></script>
   </head>
-  <body id="grid-container">
-    <header class="navigation">
+  <body id="menu-container">
+    <header id="navigation">
       <nav id="flex-container">
-      <h1 id="logo">
-        <img src="./img/okotoks-pizza-logo.png" alt="logo" width="150">
-      </h1>
+                  <h1 id="logo">
+                    <img src="./img/okotoks-pizza-logo.png" alt="logo" width="150">
+                  </h1>
         <ul id="nav-bar">
           <li>
 						<a href="index.html">
@@ -75,12 +75,13 @@
           </li>
         </ul>
 			</nav>
-    <aside class="sidebar">
+      </header>
+    <aside id="sidebar">
       <h3>
         <a href="#Starters">Starters</a>
       </h3>
       <h3>
-        <a href="#Pizza">Pizza & Calzones</a>
+        <a href="#Pizza">Pizza   Calzones</a>
       </h3>
       <h3>
         <a href="#Pasta">Pasta</a>
@@ -89,11 +90,11 @@
         <a href="#Desserts">Desserts</a>
       </h3>
     </aside>
-    <article class="menu">
-      <section>
-        <h1>Menu</h1>
-        <img src="./img/pizza_pasta.jpg" alt="pizza and pasta on table" width="400px">
-        <h3 id="Starters">
+    <article id="menu">
+      <h1>Menu</h1>
+      <img class="pizza" src="./img/pizza_pasta.jpg" alt="pizza and pasta on table" width="750px">
+      <section class="starters">
+      <h3 id="Starters">
           Starters
         </h3>
         <h4>
@@ -129,7 +130,7 @@
         </p>
       </section>
         <hr>
-      <section>
+      <section class="pizza">
         <h3 id="Pizza">
           Pizza & Calzones
         </h3>
@@ -231,7 +232,7 @@
         </p>
       </section>
         <hr>
-      <section>
+      <section class="pasta">
         <h3 id="Pasta">
           Pasta
         </h3>
@@ -272,15 +273,15 @@
           Build you own Pasta from 14.99
         </h4>
         <p>
-          <ol>
+          <ul style="list-style-type:none;">
           <li>Spaghetti  /  Linguine  /  Penne</li>
           <li>Marinara  /  Bolognese  /  Alfredo </li>
           <li>Meatballs  /  Shrimp  /  Chicken</li>
-        </ol>
+        </ul>
         </p>
       </section>
         <hr>
-      <section>
+      <section class="desserts">
         <h3 id="Desserts">
           Desserts
         </h3>
@@ -310,7 +311,7 @@
         </p>
       </section>
     </article>
-    <footer class="footer">
+    <footer id="footer">
       <p>
         © 2019 Okotoks Pizza. All rights reserved.
       </p>
