@@ -16,12 +16,12 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
 		<script type="text/javascript" src="./js/app.js" defer></script>
   </head>
-  <body id="menu-container">
-    <header id="navigation">
-      <nav id="flex-container">
-                  <h1 id="logo">
-                    <img src="./img/okotoks-pizza-logo.png" alt="logo" width="150">
-                  </h1>
+  <body>
+    <header>
+      <div class="logo">
+      <img class="logo-responsive" src="./img/okotoks-pizza-logo.png" alt="logo" width="200px">
+      </div>
+      <nav>
         <ul id="nav-bar">
           <li>
 						<a href="index.html">
@@ -43,58 +43,36 @@
 							Contact
 						</a>
 					</li>
-          <li>
-            <a href="https://www.facebook.com/">
-              <img src="./img/facebook.png" alt="facebook page" width="50px">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/">
-              <img src="./img/instagram.png" alt="instagram page" width="50px">
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/?lang=en">
-              <img src="./img/twitter.png" alt="twitter page" width="55px">
-            </a>
-          </li>
-          <li>
-            <a href="mailto:info@okotokspizza.ca">
-              <img src="./img/email.png" alt="send email" width="50px">
-            </a>
-          </li>
-          <li>
-            <a href="tel:4035555555">
-              <img src="./img/phone.png" alt="phone number" width="50px">
-            </a>
-          </li>
-          <li class="phone">
-            <a href="tel:4035555555">
-              <strong>403-555-5555</strong>
-            </a>
-          </li>
         </ul>
 			</nav>
-      </header>
-    <aside id="sidebar">
-      <h3>
-        <a href="#Starters">Starters</a>
-      </h3>
-      <h3>
-        <a href="#Pizza">Pizza   Calzones</a>
-      </h3>
-      <h3>
-        <a href="#Pasta">Pasta</a>
-      </h3>
-      <h3>
-        <a href="#Desserts">Desserts</a>
-      </h3>
-    </aside>
-    <article id="menu">
-      <h1>Menu</h1>
-      <img class="pizza" src="./img/pizza_pasta.jpg" alt="pizza and pasta on table" width="750px">
+      <div class="phone">
+        <p>Pick Up or Delivery:<br>
+        <a href="tel:4035555555">403-555-5555</a>
+      </p>
+      </div>
+    </header>
+    <main id="menu">
+      <div class="menu-title">
+        <h1>MENU</h1>
+      </div>
+      <div class="menu-sections">
+        <ul id="menu-sections">
+          <li>
+            <a href="#Starters">Starters</a>
+          </li>
+          <li>
+            <a href="#Pizza">Pizza & Calzones</a>
+          </li>
+          <li>
+            <a href="#Pasta">Pasta</a>
+          </li>
+          <li>
+            <a href="#Desserts">Desserts</a>
+          </li>
+        </ul>
+      </div>
       <section class="starters">
-      <h3 id="Starters">
+        <h3 id="starters">
           Starters
         </h3>
         <h4>
@@ -131,7 +109,7 @@
       </section>
         <hr>
       <section class="pizza">
-        <h3 id="Pizza">
+        <h3 id="pizza">
           Pizza & Calzones
         </h3>
         <h6>
@@ -233,7 +211,7 @@
       </section>
         <hr>
       <section class="pasta">
-        <h3 id="Pasta">
+        <h3 id="pasta">
           Pasta
         </h3>
         <h6>
@@ -282,7 +260,7 @@
       </section>
         <hr>
       <section class="desserts">
-        <h3 id="Desserts">
+        <h3 id="desserts">
           Desserts
         </h3>
         <h4>
@@ -310,8 +288,36 @@
           Traditional New York–style cheesecake with choice of sauce with a graham cracker crust <span>6.99</span>
         </p>
       </section>
-    </article>
+    </main>
     <footer id="footer">
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/">
+            <img src="./img/facebook.png" alt="facebook page" width="40px">
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/">
+            <img src="./img/instagram.png" alt="instagram page" width="40px">
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/?lang=en">
+            <img src="./img/twitter.png" alt="twitter page" width="40px">
+          </a>
+        </li>
+        <li>
+          <a href="mailto:info@okotokspizza.ca">
+            <img src="./img/email.png" alt="send email" width="40px">
+          </a>
+        </li>
+        <li>
+          <a href="tel:4035555555">
+            <img src="./img/phone.png" alt="phone number" width="40px">
+          </a>
+        </li>
+      </ul>
       <p>
         © 2019 Okotoks Pizza. All rights reserved.
       </p>
