@@ -13,7 +13,7 @@ header {
   display: grid;
   grid-template-columns: 20% 60% 20%;
   grid-template-rows: auto;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.95);
   position: fixed;
   top: 0;
   left: 0;
@@ -31,6 +31,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  font-style: italic;
+}
+
 h1 {
   font-family: Bernard MT condensed, Arial, serif;
   text-transform: uppercase;
@@ -38,11 +42,12 @@ h1 {
   font-size: 60px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #A51818;
-  padding: 20vh;
+  padding: 20vw;
 }
 
 h4 {
   color: #CF0101;
+  font-size: 20px;
   line-height: 3vh;
   padding: 5px;
 }
@@ -56,12 +61,12 @@ h6 {
   position:relative;
   z-index: 1;
   padding:10px;
-  padding-top: 12.5px;
+  padding-top: 15px;
 }
 
 .logo-responsive {
   width: 100%;
-  min-width: 90px;
+  min-width: 100px;
   position:relative;
 }
 
@@ -131,12 +136,12 @@ h6 {
 /*Home page*/
 
 #home {
-  grid-gap: 15px;
+  grid-gap: 12px;
 }
 
   h2, h3, h3>a {
   font-family: Bernard MT condensed, Arial, serif;
-  font-size: 2em;
+  font-size: 40px;
   text-transform: uppercase;
 }
 
@@ -150,19 +155,19 @@ h6 {
 }
 
 .about-header {
-  background-image: url('../img/inside.jpg');
+  background-image: url('../img/checkered.png');
+  background-repeat: repeat;
+  background-size: 20px;
   max-width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 15vh;
+  padding: 6vw;
   }
 
 .about-text {
   background-color: #CF0101;
   color: white;
   font-family: arial;
-  padding: 6vh 6vw;
-  line-height: 5vh;
+  padding: 6vw;
+  line-height: 5vw;
   font-style: italic;
 }
 
@@ -172,32 +177,34 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 6vh 6vw;
+  padding: 6vw;
   line-height: 9vh;
   color: white;
 }
 
 .build-pasta {
-  background-image: url('../img/checkered.png');
-  background-repeat: repeat;
-  background-size: 20px;
+  background-image: url('../img/spaghetti.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 100%;
-  padding: 6vh 6vw;
+  padding: 6vw;
   line-height: 9vh;
-  background-color: linen;
+  color: white;
 }
 
 .contact-home, .hours-home, .come-visit {
   background-color: black;
+  padding-top: 1vw;
 }
 
 .contact-home, .hours-home, .come-visit p {
   color: white;
-  padding: 1vw;
+  padding: 2vw;
 }
 
 .hours-home p {
-  line-height: 2vw;
+  line-height: 2.2vh;
 }
 
 @media screen and (min-width: 830px) {
@@ -205,7 +212,7 @@ h6 {
   #home {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: auto 12.5% 12.5% auto auto;
   }
 
   .welcome-title {
@@ -214,20 +221,24 @@ h6 {
 
   .about-text {
     grid-row: 2;
-    line-height: 6vh;
+    padding: 4vw;
+    line-height: 3vw;
   }
 
   .about-header {
     grid-column: 2;
+    padding-top: 12vh;
   }
 
   .pizza-of-month {
     grid-row: 3;
+    font-size: 130%;
   }
 
   .build-pasta {
     grid-column: 2;
     grid-row: 3;
+    font-size: 115%;
   }
 
   .come-visit {
@@ -239,6 +250,7 @@ h6 {
     grid-column: 1 / span 2;
     grid-row: 6;
   }
+
   .come-visit {
     display: grid;
     grid-template-columns: subgrid;
@@ -260,8 +272,19 @@ h6 {
       grid-row: 5;
     }
 
-}
+  h2, h3, h3>a {
+    font-size: 180%;
+  }
 
+  h1 {
+    font-size: 7vw;
+    padding: 17vw;
+  }
+
+  .our-story{
+    margin: 60px;
+  }
+}
 
 /*Side-bar*/
 
@@ -294,13 +317,16 @@ h6 {
   background-size: 20px;
   max-width: 100%;
   margin-top: 15vh;
+
 }
+
 .menu-title {
   background-image: url('../img/pizza_pasta_header.jpg');
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 section {
@@ -309,7 +335,7 @@ section {
 
 .price {
   color: #CF0101;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 #menu h3 {
@@ -326,7 +352,7 @@ section {
   border-bottom: 4px dashed #CF0101;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 830px) {
 
   #menu {
   display: grid;
@@ -336,6 +362,7 @@ section {
 
   .menu-title {
     grid-column: 1 / span 2;
+    height: 70vh;
   }
   .menu-sections{
     grid-row: 2;
@@ -382,7 +409,7 @@ section {
     position: relative;
     height: 0;
 }
-.map iframe{
+.map iframe {
     left: 0;
     top: 0;
     height: 100%;
@@ -396,10 +423,12 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-row: auto;
+  grid-gap: 12px;
   }
 
   .contact-title {
     grid-column: 1 / span 2;
+    height: 70vh;
   }
 
   .contact-info {
@@ -409,8 +438,20 @@ section {
   .hours-info {
   grid-column: 2;
   }
+
+  .pizzeria{
+  background-image: url('../img/inside2.jpg');
+  background-position: bottom;
+  background-size: cover;
+  max-width: 100%;
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  height: 60vh;
+  }
+
   .map {
   grid-column: 1 / span 2;
+  grid-row: 4;
   }
 }
 
@@ -426,15 +467,18 @@ section {
 
 .our-story {
   background-color: rgba(0, 0, 0, .6);
-  margin: 60px;
-  padding-bottom: 3vh;
+  padding-bottom: 3vw;
   grid-column: 1 / span 2;
   grid-row: 1;
-  line-height: 25px;
+}
+
+.our-story h1 {
+  padding: 3.5vw;
 }
 
 .our-story p {
   padding: 0 10vw 2vh;
+  line-height: 25px;
 }
 
 .pizza-background {
@@ -470,7 +514,6 @@ section {
   max-width: 100%;
   padding-top: 5vh;
 }
-
 
 /*Footer*/
 
