@@ -8,6 +8,7 @@
 }
 
 /*Header*/
+
 header {
   height: 15vh;
   display: grid;
@@ -51,6 +52,7 @@ h4 {
   line-height: 3vh;
   padding: 5px;
 }
+
 h6 {
   font-style: italic;
 }
@@ -204,12 +206,12 @@ h6 {
 }
 
 .hours-home p {
-  line-height: 2.2vh;
+  line-height: 2.4vh;
 }
 
 .map-2 {
     overflow: hidden;
-    padding-bottom: 30%;
+    padding-bottom: 20%;
     position: relative;
     height: 0;
 }
@@ -260,9 +262,18 @@ h6 {
     grid-row: 4 / span 2;
   }
 
+  .pizzeria-2{
+  background-image: url('../img/inside.jpg');
+  background-position: bottom;
+  background-size: cover;
+  max-width: 100%;
+  grid-row: 6;
+  grid-column: 1 / span 2;
+  height: 50vh;
+  }
+
   .map-2 {
     grid-column: 1 / span 2;
-    grid-row: 6;
   }
 
   .come-visit {
@@ -278,12 +289,12 @@ h6 {
 
     .contact-home {
       grid-column: 1;
-      grid-row: 4;
+      grid-row: 5;
     }
 
     .hours-home {
       grid-column: 2;
-      grid-row: 4;
+      grid-row: 5;
     }
 
   h2, h3, h3>a {
@@ -331,7 +342,6 @@ h6 {
   background-size: 20px;
   max-width: 100%;
   margin-top: 15vh;
-
 }
 
 .menu-title {
@@ -340,7 +350,6 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 section {
@@ -431,13 +440,13 @@ section {
     position: absolute;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 830px) {
 
   #contact {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-row: auto;
-  grid-gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    grid-gap: 12px;
   }
 
   .contact-title {
@@ -446,25 +455,26 @@ section {
   }
 
   .contact-info {
-  grid-row: 2;
+    grid-row: 2;
   }
 
   .hours-info {
-  grid-column: 2;
+    grid-column: 2;
   }
 
   .pizzeria{
-  background-image: url('../img/inside2.jpg');
-  background-position: bottom;
-  background-size: cover;
-  max-width: 100%;
-  grid-row: 3;
-  grid-column: 1 / span 2;
-  height: 60vh;
+    background-image: url('../img/inside2.jpg');
+    background-position: bottom;
+    background-size: cover;
+    max-width: 100%;
+    grid-row: 3;
+    grid-column: 1 / span 2;
+    height: 60vh;
   }
 
   .map {
-  grid-column: 1 / span 2;
+    grid-column: 1 / span 2;
+    grid-row: 4;
   }
 }
 
@@ -547,4 +557,5 @@ section {
   align-content: space-around;
   background-color: #A51818;
   padding: 1em;
+  position: relative;
 }
